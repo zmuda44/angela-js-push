@@ -32,11 +32,24 @@ console.log(secondTweet.slice(0, 3)); */
 
 /* Angelas 3rd javascript */
 
-var thirdTweet = prompt("enter your name");
-var firstChar = thirdTweet.slice(0,1);
-var firstCharUpper = firstChar.toUpperCase;
-console.log(firstCharUpper);
+/* this code worked */
 
+/* var enterName = prompt("enter your name");
+var firstChar = enterName.slice(0,1);
+var firstCharUpper = firstChar.toUpperCase();
+var restOfName = enterName.slice(1, enterName.length);
+console.log(firstCharUpper + restOfName); */
+
+document.getElementById("name-button").addEventListener("click", () => {
+  var enterName = document.querySelector(".enter-name").value;
+  var firstCharUpper = enterName.slice(0, 1).toUpperCase();
+  var restOfName = enterName.slice(1, enterName.length).toLowerCase();
+  if (enterName == "greg" ) {
+    document.querySelector(".name-entered").innerHTML = "stupid name"
+  }
+  else {
+  document.querySelector(".name-entered").innerHTML = "hello " + firstCharUpper + restOfName;}
+})
 
 
 
