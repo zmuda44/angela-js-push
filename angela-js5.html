@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<script>
+  var names = ["michael", "angela", "greg", "albert", "ron", "james"]
+
+  function whoisPaying() {
+    
+    var numberOfPeople = names.length
+    var randomNumber = Math.floor(Math.random()*numberOfPeople)
+    console.log(randomNumber) 
+    var chosen = names[randomNumber]
+    return chosen + " is going to buy lunch today!"
+  }
+
+  console.log(whoisPaying())
+
+
+  
+
+ 
+</script>
+</body>
+</html>

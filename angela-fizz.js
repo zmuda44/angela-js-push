@@ -49,14 +49,16 @@ function fizzBuzz () {
 fizzBuzz() */
 
 /* this angela's fizzbuzz.  she doesn't do a for loop or
-anytyhing, she keeps calling the function in the console */
-var output = [];
+anytyhing, she keeps calling the function in the console. 
+i was wrong, she skips a lesson and comes back to it. I am going to comment out this
+code and write it again angela's way.  she uses a while not for*/
+/* var output = [];
 count = 1;
 
 for (i=0; i < 100; i++) {
   
   if (count % 3 === 0 && count % 5 === 0) {
-    output.push["fizzbuzz"]
+    output.push("fizzbuzz")
   }  
   else if (count % 3 === 0) {
     output.push("fizz")
@@ -73,7 +75,65 @@ for (i=0; i < 100; i++) {
   
   count++;
   console.log(output);
+} */
+
+/* while and for operate exactly the same but there is no i=0 etc. you type
+the whole equation exactly the same thoguh */
+
+/* var output = [];
+count = 2;
+
+for (i=0; i < 100; i++) {
+  
+  if (count % 3 === 0 && count % 5 === 0) {
+    output.push("fizzbuzz")
+  }  
+  else if (count % 3 === 0) {
+    output.push("fizz")
+  } 
+  else if (count % 5 === 0) {
+    output.push("buzz")
+  }
+  
+  
+  else {
+    output.push(count);
+  }
+
+  
+  count++; 
+  console.log(output);
+} */
+
+/* the code above was still slightly different.  the codes above all added another array one hundred times */
+
+var output = []
+var count = 1
+
+function fizzBuzz() {
+while (count <= 100) {
+  if (count % 3 === 0 && count % 5 === 0) {
+  output.push("fizzbuzz")
+}  
+else if (count % 3 === 0) {
+  output.push("fizz")
+} 
+else if (count % 5 === 0) {
+  output.push("buzz")
 }
+
+
+else {
+  output.push(count);
+}
+
+
+count++; 
+}
+console.log(output)
+}
+
+fizzBuzz()
 
 
   
